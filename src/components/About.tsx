@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import SectionLabel from "./SectionLabel";
 import { aboutStats, aboutText, profile } from "../data/profile";
 import { useCountUp } from "../hooks/useCountUp";
+import image from "../assets/profile.jpeg";
 
 function StatCard({ label, value, suffix }: { label: string; value: number; suffix: string }) {
   const { ref, value: animated } = useCountUp(value);
@@ -34,14 +35,12 @@ export default function About() {
           className="mx-auto w-56 sm:w-64 md:mx-0"
         >
           <div className="glass relative aspect-square rounded-3xl p-2">
-            <div className="flex h-full w-full items-center justify-center rounded-2xl bg-panel-hi font-display text-5xl text-text-lo">
-              {profile.name
-                .split(" ")
-                .map((n) => n[0])
-                .join("")}
-            </div>
-          </div>
-          <p className="mt-3 text-center font-mono text-[11px] text-text-lo">[Profile image placeholder]</p>
+  <img
+    src={image}
+    alt={profile.name}
+    className="h-full w-full rounded-2xl object-cover"
+  />
+</div>
         </motion.div>
 
         <div>

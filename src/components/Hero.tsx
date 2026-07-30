@@ -3,6 +3,7 @@ import { Download, Mail, Code2, Swords } from "lucide-react";
 import { FaGithub, FaLinkedin, FaTwitter } from "react-icons/fa";
 import { profile, socials } from "../data/profile";
 import { useTypingEffect } from "../hooks/useTypingEffect";
+import image from "../assets/profile.jpeg";
 
 const ICONS: Record<string, React.ComponentType<{ size?: number }>> = {
   github: FaGithub,
@@ -112,32 +113,33 @@ export default function Hero() {
           className="relative mx-auto flex h-64 w-64 items-center justify-center sm:h-80 sm:w-80"
         >
           <div className="absolute inset-0 animate-blob rounded-full bg-gradient-to-br from-amber/30 via-teal/25 to-violet/30 blur-2xl" />
-          <div className="glass relative flex h-full w-full items-center justify-center rounded-full text-6xl font-display text-text-hi">
-            {profile.name
-              .split(" ")
-              .map((n) => n[0])
-              .join("")}
-          </div>
+          <div className="glass relative h-full w-full overflow-hidden rounded-full">
+  <img
+    src={image}
+    alt={profile.name}
+    className="h-full w-full object-cover"
+  />
+</div>
           <motion.div
             animate={{ y: [0, -10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
             className="glass absolute -right-2 top-6 rounded-lg px-3 py-1.5 font-mono text-[11px] text-teal"
           >
-            {"{ }"} Java
+            git commit -m "final v2 (real)"
           </motion.div>
           <motion.div
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
             className="glass absolute -left-4 bottom-10 rounded-lg px-3 py-1.5 font-mono text-[11px] text-violet"
           >
-            RAG.retrieve()
+           "catch (Exception e) { "pray(); "}
           </motion.div>
           <motion.div
             animate={{ y: [0, -8, 0] }}
             transition={{ duration: 4.5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
             className="glass absolute bottom-0 right-2 rounded-lg px-3 py-1.5 font-mono text-[11px] text-amber"
           >
-            Spring Boot
+            if (bug) blame(AI);
           </motion.div>
         </motion.div>
       </div>
