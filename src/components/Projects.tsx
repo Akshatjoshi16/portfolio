@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import { ExternalLink, ArrowUpRight } from "lucide-react";
 import { FaGithub } from "react-icons/fa";
 import SectionLabel from "./SectionLabel";
 import { projects } from "../data/projects";
@@ -54,15 +53,9 @@ export default function Projects() {
                 ))}
               </div>
 
-              <div className="mt-6 flex items-center gap-4 font-mono text-xs">
-                <a href={p.liveUrl} className="inline-flex items-center gap-1.5 text-text-hi hover:text-teal">
-                  <ExternalLink size={13} /> Live Demo
-                </a>
-                <a href={p.githubUrl} className="inline-flex items-center gap-1.5 text-text-hi hover:text-teal">
-                  <FaGithub size={13} /> GitHub
-                </a>
-                <a href="#" className="ml-auto inline-flex items-center gap-1 text-text-lo hover:text-teal">
-                  Details <ArrowUpRight size={13} />
+              <div className="mt-6 flex items-center font-mono text-xs">
+                <a href={p.githubUrl} target="_blank" rel="noreferrer" className="inline-flex items-center gap-1.5 text-text-hi hover:text-teal">
+                  <FaGithub size={13} /> View Architecture
                 </a>
               </div>
             </div>

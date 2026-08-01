@@ -10,7 +10,7 @@ import Hero from "./components/Hero";
 import About from "./components/About";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
-import AIJourney from "./components/AIJourney";
+
 import Timeline from "./components/Timeline";
 import CertificationsAchievements from "./components/CertificationsAchievements";
 import GithubStats from "./components/GithubStats";
@@ -33,7 +33,6 @@ export default function App() {
         <About />
         <Skills />
         <Projects />
-        <AIJourney />
         <Timeline />
         <CertificationsAchievements />
         <GithubStats />

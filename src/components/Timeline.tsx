@@ -49,7 +49,7 @@ export default function Timeline() {
 
       <div className="grid gap-14 md:grid-cols-2">
         <div>
-          <h3 className="mb-6 font-mono text-xs uppercase tracking-wider text-text-lo">Experience</h3>
+          <h3 className="mb-6 font-mono text-xs uppercase tracking-wider text-text-lo">Training</h3>
           <TimelineTrack
             items={experience.map((e) => ({
               title: e.role,

@@ -7,51 +7,36 @@ export interface Project {
   techStack: string[];
   problem: string;
   features: string[];
-  liveUrl?: string;
   githubUrl?: string;
 }
 
 export const projects: Project[] = [
   {
-    title: "Purohitam — Pooja Booking Platform",
+    title: "Purohitam — Vedic Pooja Booking Platform",
     description:
-      "[PROJECT DESCRIPTION] A full-stack booking application for Vedic pooja services, with an admin dashboard and email notifications.",
+      "A full-stack booking platform for Vedic pooja services themed around Mahakaleshwar, Ujjain — letting devotees discover and book verified purohits, with an admin dashboard to manage bookings end-to-end.",
     techStack: ["Spring Boot", "MySQL", "React", "TypeScript", "Tailwind CSS", "JWT"],
     problem:
-      "[BUSINESS PROBLEM] Helped devotees discover and book verified purohits for rituals without relying on word-of-mouth scheduling.",
-    features: ["End-to-end booking flow", "Admin dashboard with status management", "HTTP-only cookie JWT auth"],
-    liveUrl: "#",
-    githubUrl: "#",
+      "Devotees previously relied on word-of-mouth to find and schedule purohits for rituals. Purohitam replaces that with a structured booking flow and status tracking.",
+    features: [
+      "End-to-end booking flow — entities, DTOs, service, controller, email notifications across the booking lifecycle",
+      "Admin dashboard with booking management and status actions",
+      "HTTP-only cookie-based JWT authentication",
+    ],
+    githubUrl: "https://github.com/akshatjoshi16/purohitam",
   },
   {
-    title: "PDF Chatbot (RAG)",
-    description:
-      "[PROJECT DESCRIPTION] A chat interface over uploaded PDFs using retrieval-augmented generation.",
-    techStack: ["Python", "LangChain", "Streamlit", "Google Generative AI", "FAISS"],
-    problem:
-      "[BUSINESS PROBLEM] Let users query long documents conversationally instead of manually searching for answers.",
-    features: ["Disk-cached vector store", "Local embeddings fallback for quota-free dev", "Source-grounded answers"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "RAG Resume Screener",
-    description:
-      "[PROJECT DESCRIPTION] A modular resume screening system that retrieves per-resume evidence against a job description.",
-    techStack: ["Python", "LangChain", "Vector DB", "Embeddings"],
-    problem:
-      "[BUSINESS PROBLEM] Speeds up first-pass resume screening while keeping retrieval scoped per candidate rather than a single global index.",
-    features: ["Per-resume retrieval (not global top-k)", "Modular ingestion/chunking pipeline", "JD-based screening stage"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
-  {
-    title: "[PROJECT TITLE]",
-    description: "[PROJECT DESCRIPTION]",
-    techStack: ["[TECH", "STACK]"],
-    problem: "[BUSINESS PROBLEM]",
-    features: ["[Feature 1]", "[Feature 2]", "[Feature 3]"],
-    liveUrl: "#",
-    githubUrl: "#",
-  },
+  title: "Hospital Operation Knowledge Bot",
+  description:
+    "A retrieval-augmented generation chatbot that answers questions about hospital operations by retrieving relevant context from internal documents before generating a response.",
+  techStack: ["Python", "LangChain", "Vector DB", "LLM API"],
+  problem:
+    "Hospital staff — especially new hires and night-shift teams — often need quick answers to operational questions (admission procedures, department protocols, equipment handling, escalation paths) buried across scattered SOP documents and manuals. Finding the right answer meant manually searching PDFs or interrupting a senior colleague. This bot puts that knowledge one question away, grounded directly in the hospital's own documentation.",
+  features: [
+    "Answers grounded in retrieved document context rather than the model's general knowledge, reducing hallucinated procedures",
+    "Ingests and indexes multiple SOP/operations documents into a searchable vector store",
+    "Designed for fast, conversational lookup — reduces dependency on manually searching PDFs or asking a colleague for routine procedural questions",
+  ],
+  githubUrl: "https://github.com/akshatjoshi16/hospital_assistant",
+},
 ];

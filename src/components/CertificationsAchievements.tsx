@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { Award, ExternalLink } from "lucide-react";
 import SectionLabel from "./SectionLabel";
-import { certifications, achievements } from "../data/timeline";
+import { certifications} from "../data/timeline";
 
 export default function CertificationsAchievements() {
   return (
@@ -34,22 +34,7 @@ export default function CertificationsAchievements() {
         ))}
       </div>
 
-      <div className="mt-14 grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-6">
-        {achievements.map((a, i) => (
-          <motion.div
-            key={a.label}
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true, margin: "-60px" }}
-            transition={{ duration: 0.4, delay: i * 0.05 }}
-            whileHover={{ y: -4 }}
-            className="glass rounded-2xl p-5 text-center"
-          >
-            <p className="font-display text-2xl font-semibold text-gradient">{a.value}</p>
-            <p className="mt-1 font-mono text-[10px] leading-tight text-text-lo">{a.label}</p>
-          </motion.div>
-        ))}
-      </div>
+      
     </section>
   );
 }
