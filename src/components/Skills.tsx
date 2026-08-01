@@ -22,33 +22,19 @@ export default function Skills() {
               <span className="font-mono text-[11px] text-text-lo">{group.note}</span>
             </div>
 
-            <div className="space-y-4">
+            <div className="flex flex-wrap gap-2.5">
               {group.skills.map((skill, i) => (
-                <motion.div
-                  key={skill.name}
-                  initial={{ opacity: 0, x: -12 }}
-                  whileInView={{ opacity: 1, x: 0 }}
+                <motion.span
+                  key={skill}
+                  initial={{ opacity: 0, y: 8 }}
+                  whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true }}
-                  transition={{ duration: 0.4, delay: i * 0.03 }}
-                  whileHover={{ x: 4 }}
-                  className="group"
+                  transition={{ duration: 0.35, delay: i * 0.03 }}
+                  whileHover={{ y: -3, borderColor: "var(--color-teal)" }}
+                  className="rounded-full border border-line px-3.5 py-1.5 text-sm text-text-hi transition-colors hover:text-teal"
                 >
-                  <div className="mb-1.5 flex items-center justify-between">
-                    <span className="text-sm text-text-hi">{skill.name}</span>
-                    <span className="font-mono text-[11px] text-text-lo group-hover:text-teal">
-                      {skill.level}%
-                    </span>
-                  </div>
-                  <div className="h-1.5 w-full overflow-hidden rounded-full bg-line/60">
-                    <motion.div
-                      initial={{ width: 0 }}
-                      whileInView={{ width: `${skill.level}%` }}
-                      viewport={{ once: true }}
-                      transition={{ duration: 0.9, ease: "easeOut", delay: i * 0.04 }}
-                      className="h-full rounded-full bg-gradient-to-r from-amber via-teal to-violet"
-                    />
-                  </div>
-                </motion.div>
+                  {skill}
+                </motion.span>
               ))}
             </div>
           </motion.div>
