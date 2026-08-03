@@ -6,7 +6,7 @@ import { certifications} from "../data/timeline";
 export default function CertificationsAchievements() {
   return (
     <section id="certifications" className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <SectionLabel tag="// 06_certifications" title="Certifications & Achievements" />
+      <SectionLabel tag="" title="Certifications & Achievements" />
 
       <div className="grid gap-6 md:grid-cols-3">
         {certifications.map((c, i) => (

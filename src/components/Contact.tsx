@@ -16,7 +16,7 @@ export default function Contact() {
 
   return (
     <section id="contact" className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <SectionLabel tag="// 09_contact" title="Let's Build Something" />
+      <SectionLabel tag="" title="Let's Build Something" />
 
       <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr]">
         <div className="space-y-8">

@@ -70,4 +70,6 @@ export const codingProfiles: CodingProfile[] = [
   { name: "LinkedIn", link: "https://linkedin.com/in/akshat-joshi-ba9123315/" },
   { name: "LeetCode", link: "https://leetcode.com/akshat_joshi1" },
   { name: "Codeforces", link: "https://codeforces.com/profile/akshat_joshi1" },
+  { name: "Medium", link: "https://codeforces.com/profile/akshat_joshi1" },
+
 ];

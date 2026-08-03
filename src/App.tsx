@@ -13,7 +13,7 @@ import Projects from "./components/Projects";
 
 import Timeline from "./components/Timeline";
 import CertificationsAchievements from "./components/CertificationsAchievements";
-import GithubStats from "./components/GithubStats";
+
 import CodingProfiles from "./components/CodingProfiles";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
@@ -35,7 +35,7 @@ export default function App() {
         <Projects />
         <Timeline />
         <CertificationsAchievements />
-        <GithubStats />
+        
         <CodingProfiles />
         <Contact />
       </main>

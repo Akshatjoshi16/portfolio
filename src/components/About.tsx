@@ -24,7 +24,7 @@ function StatCard({ label, value, suffix }: { label: string; value: number; suff
 export default function About() {
   return (
     <section id="about" className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <SectionLabel tag="// 01_about" title="About Me" />
+      <SectionLabel tag="" title="About Me" />
 
       <div className="grid gap-12 md:grid-cols-[0.8fr_1.2fr] md:gap-16">
         <motion.div

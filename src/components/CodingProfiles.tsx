@@ -6,7 +6,7 @@ import { codingProfiles } from "../data/timeline";
 export default function CodingProfiles() {
   return (
     <section id="profiles" className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <SectionLabel tag="// 08_profiles" title="Coding Profiles" />
+      <SectionLabel tag="" title="Coding Profiles" />
 
       <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
         {codingProfiles.map((p, i) => (

@@ -25,10 +25,10 @@ export const socials = [
 ];
 
 export const aboutStats = [
-  { label: "Years of Learning", value: 4, suffix: "+" },
+  { label: "Hours of Coding", value: 1000, suffix: "+" },
   { label: "Projects Completed", value: 10, suffix: "+" },
   { label: "Technologies Learned", value: 10, suffix: "+" },
 ];
 
 export const aboutText =
-  "[Write 2–4 short paragraphs about your background, how you got into backend development, and what pulled you toward Generative AI and RAG systems. Mention your learning philosophy, the kind of projects you like building, and what you're currently focused on.]";
+  "Every project I build teaches me something new.It started with simple CRUD applications. Then came authentication, databases, REST APIs, and backend architecture. Recently, curiosity pulled me toward AI, where software isn't just programmed—it can reason, retrieve information, and assist users intelligently. I enjoy building practical projects that solve real problems while continuously improving my engineering skills. My goal is simple: become the kind of developer people trust with complex backend systems."

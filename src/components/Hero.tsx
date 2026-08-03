@@ -30,7 +30,7 @@ export default function Hero() {
             transition={{ duration: 0.5 }}
             className="mb-4 inline-flex items-center gap-2 rounded-full border border-line px-3 py-1 font-mono text-xs text-text-lo"
           >
-            <span className="h-1.5 w-1.5 rounded-full bg-teal" /> open to backend & AI roles
+            <span className="h-1.5 w-1.5 rounded-full bg-teal" /> open to Software Developer intern roles
           </motion.p>
 
           <motion.h1

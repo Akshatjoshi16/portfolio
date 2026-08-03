@@ -45,7 +45,7 @@ function TimelineTrack({
 export default function Timeline() {
   return (
     <section id="experience" className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <SectionLabel tag="// 05_experience" title="Experience & Education" />
+      <SectionLabel tag="" title="Experience & Education" />
 
       <div className="grid gap-14 md:grid-cols-2">
         <div>

@@ -5,7 +5,7 @@ import { skillGroups } from "../data/skills";
 export default function Skills() {
   return (
     <section id="skills" className="mx-auto max-w-6xl px-6 py-24 md:py-32">
-      <SectionLabel tag="// 02_skills" title="Skills & Stack" />
+      <SectionLabel tag="" title="Skills & Stack" />
 
       <div className="grid gap-6 md:grid-cols-2">
         {skillGroups.map((group, gi) => (
