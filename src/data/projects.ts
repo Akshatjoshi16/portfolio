@@ -14,10 +14,10 @@ export const projects: Project[] = [
   {
     title: "Purohitam — Vedic Pooja Booking Platform",
     description:
-      "A full-stack booking platform for Vedic pooja services themed around Mahakaleshwar, Ujjain — letting devotees discover and book verified purohits, with an admin dashboard to manage bookings end-to-end.",
+      "A production-ready booking platform for Vedic pooja services, themed around Ujjain, enabling devotees to discover, book, and manage appointments with verified purohits through a seamless digital experience. The platform also provides a dedicated admin dashboard for managing bookings, users, and the complete booking lifecycle.",
     techStack: ["Spring Boot", "MySQL", "React", "TypeScript", "Tailwind CSS", "JWT"],
     problem:
-      "Devotees previously relied on word-of-mouth to find and schedule purohits for rituals. Purohitam replaces that with a structured booking flow and status tracking.",
+      "Devotees previously relied on word-of-mouth and offline coordination to find and schedule purohits for religious rituals. Purohitam digitizes the entire process with a structured booking workflow, real-time status tracking, and automated notifications, making the experience more reliable and transparent.",
     features: [
       "End-to-end booking flow — entities, DTOs, service, controller, email notifications across the booking lifecycle",
       "Admin dashboard with booking management and status actions",

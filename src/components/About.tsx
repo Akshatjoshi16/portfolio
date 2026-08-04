@@ -3,6 +3,7 @@ import SectionLabel from "./SectionLabel";
 import { aboutStats, aboutText, profile } from "../data/profile";
 import { useCountUp } from "../hooks/useCountUp";
 import image from "../assets/profile.jpeg";
+import image2 from "../assets/profile2.png";
 
 function StatCard({ label, value, suffix }: { label: string; value: number; suffix: string }) {
   const { ref, value: animated } = useCountUp(value);
@@ -36,7 +37,7 @@ export default function About() {
         >
           <div className="glass relative aspect-square rounded-3xl p-2">
   <img
-    src={image}
+    src={image2}
     alt={profile.name}
     className="h-full w-full rounded-2xl object-cover"
   />
