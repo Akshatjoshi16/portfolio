@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import SectionLabel from "./SectionLabel";
 import { aboutStats, aboutText, profile } from "../data/profile";
 import { useCountUp } from "../hooks/useCountUp";
-import image from "../assets/profile.jpeg";
 import image2 from "../assets/profile2.png";
 
 function StatCard({ label, value, suffix }: { label: string; value: number; suffix: string }) {
