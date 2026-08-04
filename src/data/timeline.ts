@@ -21,7 +21,7 @@ export interface ExperienceItem {
 
 export const experience: ExperienceItem[] = [
   {
-    company: "HCL",
+    company: "HCLTech",
     role: "AI/LLM Developer — Training Program",
     duration: "Jan 2026 – May 2026",
     responsibilities: [

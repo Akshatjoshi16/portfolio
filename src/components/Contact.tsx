@@ -1,6 +1,6 @@
 import { useState, type FormEvent } from "react";
 import { motion } from "framer-motion";
-import { Mail, Phone, MapPin, Send, Check } from "lucide-react";
+import { Mail, MapPin, Send, Check } from "lucide-react";
 import SectionLabel from "./SectionLabel";
 import { profile, socials } from "../data/profile";
 
@@ -31,12 +31,7 @@ export default function Contact() {
               </span>
               {profile.email}
             </a>
-            <a href={`tel:${profile.phone}`} className="flex items-center gap-3 text-sm text-text-hi hover:text-teal">
-              <span className="flex h-9 w-9 items-center justify-center rounded-full border border-line">
-                <Phone size={14} />
-              </span>
-              {profile.phone}
-            </a>
+            
             <div className="flex items-center gap-3 text-sm text-text-hi">
               <span className="flex h-9 w-9 items-center justify-center rounded-full border border-line">
                 <MapPin size={14} />
@@ -90,7 +85,7 @@ export default function Contact() {
                 id="email"
                 required
                 type="email"
-                placeholder="you@example.com"
+                placeholder="you@gmail.com"
                 className="w-full rounded-lg border border-line bg-panel-hi px-4 py-2.5 text-sm text-text-hi outline-none placeholder:text-text-lo/60 focus:border-teal"
               />
             </div>
